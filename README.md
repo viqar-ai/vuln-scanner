@@ -34,13 +34,3 @@ python app.py
 http://localhost:5000
 ```
 
-## 📌 Future Improvements
-
-* S3 report storage
-* Authentication system
-* Advanced vulnerability database
-* Docker deployment
-
----
-
-⚠️ This project is for educational purposes only.
