@@ -15,7 +15,7 @@ A web-based vulnerability scanner built using Python, Flask, and Nmap, deployed 
 
 ## 🌐 Live Demo
 
-http://YOUR-PUBLIC-IP:5000
+http://98.87.18.163:5000
 
 ## ⚙️ Features
 
