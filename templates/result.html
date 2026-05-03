@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Scan Result</title>
+</head>
+<body>
+    <h1>Scan Results for {{ target }}</h1>
+
+```
+{% for item in results %}
+    <p>
+        Port: {{ item.port }} |
+        Service: {{ item.service }} |
+        Risk: {{ item.risk }}
+    </p>
+{% endfor %}
+
+<a href="/">Scan again</a>
+```
+
+</body>
+</html>
