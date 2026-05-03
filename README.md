@@ -1,36 +1,49 @@
-# 🔐 Vulnerability Scanner (Web App)
+# 🔐 Vulnerability Scanner Web App
 
-A simple web-based vulnerability scanner built using **Python, Nmap, Flask, and AWS EC2**.
+## 🚀 Overview
 
-## 🚀 Features
+A web-based vulnerability scanner built using Python, Flask, and Nmap, deployed on AWS EC2.
 
-* Scan any IP address
-* Detect open ports and services
-* Basic vulnerability classification
-* JSON report generation
-* Web dashboard (Flask UI)
-* Cloud deployment on AWS EC2
-
-## 🛠 Tech Stack
+## 🧰 Tech Stack
 
 * Python
 * Flask
 * Nmap
 * AWS EC2
-* HTML/CSS
+* Gunicorn
+* systemd (for 24/7 uptime)
 
-## ⚙️ Setup
+## 🌐 Live Demo
+
+http://YOUR-PUBLIC-IP:5000
+
+## ⚙️ Features
+
+* Scan target IP for open ports
+* Identify services running
+* Basic vulnerability insights
+* JSON report generation
+* Web dashboard UI
+
+## ☁️ Deployment
+
+* Hosted on AWS EC2 (Ubuntu)
+* Gunicorn used as WSGI server
+* systemd service ensures auto-start and uptime
+
+## 📂 Project Structure
+
+vuln-scanner/
+├── app.py
+├── scanner.py
+├── report.json
+├── templates/
+│   ├── index.html
+│   └── result.html
+
+## ▶️ Run Locally
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/vuln-scanner.git
-cd vuln-scanner
 pip install -r requirements.txt
 python app.py
 ```
-
-## 🌐 Access
-
-```
-http://localhost:5000
-```
-
